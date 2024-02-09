@@ -5,7 +5,9 @@
 				<a href="{{ path('app_produit_index') }}">Gestion Catalogue</a>
 			</li>
 		{% endif %}
-
+		<li>
+			<a href="{{ path('app_contact') }}">Contact</a>
+		</li>
 		{% if is_granted('IS_AUTHENTICATED_FULLY') %}
 			<li>
 				<a href="{{ path('app_logout') }}">Déconnexion</a>
@@ -20,7 +22,5 @@
 			</li>
 			<li><img src="{{ asset('assets/images/avatar.png') }}" alt="" class="avatar"></li>
 		{% endif %}
-
 	</ul>
 </nav>
-
